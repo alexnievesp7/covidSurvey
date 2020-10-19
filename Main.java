@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CovidSurvey {
+public class Main {
   public static void main(String[] args) {
 
   { 
@@ -10,7 +10,7 @@ public class CovidSurvey {
     System.out.println("What is your name?");
     String name = scan.next();
     System.out.println("What is your temperture?");
-    String temperturesc; nextString(); //type your temperture here;
+    double temperturesc = scan.nextDouble(); //type your temperture here;
     if(temperturesc >= 100.5 && temperturesc <= 100.5)
   {
     System.out.println("You can enter.");
@@ -21,7 +21,7 @@ public class CovidSurvey {
   } //sometimes it doesn't run right just run again;
     System.out.println("");
     System.out.println("Rate how safe you feel coming back to school."); 
-    for (int good = 0; good < 6; good++){
+    for (int good = 0; good < 1; good++){
     System.out.println(good);
     }
     int good = scan.nextInt(); 
@@ -35,10 +35,12 @@ public class CovidSurvey {
     }
     System.out.println("Are you prepared for this school year?");
     String prep = scan.next();
-    System.out.println("Yes or No?");
-    if (Yes)
+    System.out.println("True or False?");
+    boolean prepared = scan.nextBoolean();
+
+    if (prepared)
     {
-      System.out.println("Awesome, we looking forward to a new year!");
+      System.out.println("Awesome, we are looking forward to a new year!");
     }
     else  
     {

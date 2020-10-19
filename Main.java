@@ -21,6 +21,7 @@ public class Main {
   } //sometimes it doesn't run right just run again;
     System.out.println("");
     System.out.println("Rate how safe you feel coming back to school."); 
+    System.out.println("On a scale on 1-10");
     for (int good = 0; good < 1; good++){
     System.out.println(good);
     }
@@ -28,7 +29,7 @@ public class Main {
 
     System.out.println("Can you rate how you feel today");
     int num = 0;
-    while ( num < 6){
+    while ( num < 1){
       System.out.println("If less than 3 please go to the office");
     int String = scan.nextInt();
     num++;
